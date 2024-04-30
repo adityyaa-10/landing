@@ -29,8 +29,8 @@ const Card: React.FC<CardProps> = ({ imgUrl, title, description, tags }) => {
 
             <div className="flex flex-col justify-between px-4 pb-4 flex-1">
                 <div>
-                    <h1 className="text-xl font-medium mb-2">{title}</h1>
-                    <p className={`${regularFont.className} text-base leading-[1.35em] text-black tracking-wide mb-4 truncate-3-lines`}>
+                    <h1 className="text-xl font-medium my-2">{title}</h1>
+                    <p className={`${regularFont.className} text-lg leading-[1.35em] text-black tracking-wide mb-2 truncate-3-lines`}>
                         {description}
                     </p>
                 </div>
