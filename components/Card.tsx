@@ -8,6 +8,11 @@ const regularFont = localFont({
     style: 'normal',
 })
 
+const semiBoldFont = localFont({
+    src: '../fonts/SaansTRIAL-SemiBold.ttf',
+    style: 'normal',
+})
+
 // Define props interface
 interface CardProps {
     imgUrl: string;
@@ -18,25 +23,28 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ imgUrl, title, description, tags }) => {
     return (
-        <div className="mt-1 w-full max-w-sm overflow-hidden bg-white rounded-[36px] h-full">
-            <div className="relative">
-                <img
-                    className="object-cover w-full h-40 rounded-t-[40px]"
-                    src={imgUrl}
-                    alt="avatar"
-                />
-            </div>
+        <div className="flex flex-col bg-white rounded-[16px] sm:rounded-3xl md:rounded-[36px] overflow-hidden">
+            <img
+                className="object-cover w-full h-40 rounded-t-[16px] sm:rounded-t-3xl md:rounded-t-[36px]"
+                src={imgUrl}
+                alt="avatar"
+            />
 
-            <div className="px-6 py-4">
-                <h1 className="text-xl font-medium">{title}</h1>
-                <p className={`${regularFont.className} py-2 text-base leading-[1.35em] text-black tracking-wide`}>
-                    {description}
-                </p>
-                <div className="mt-4 text-gray-700">
+            <div className="flex flex-col justify-between p-4 flex-1">
+                <div>
+                    <h1 className="text-xl font-medium mb-2">{title}</h1>
+                    <p className={`${regularFont.className} text-base leading-[1.35em] text-black tracking-wide mb-4 truncate-3-lines`}>
+                        {description}
+                    </p>
+                </div>
+                <div className="flex flex-wrap">
                     {tags.map((tag, index) => (
-                        <h1 key={index} className="px-2 text-sm">
+                        <span
+                            key={index}
+                            className={`${semiBoldFont.className} bg-[#DDFC9D] text-black rounded-lg font-medium px-2 py-1 m-[3px] text-base`}
+                        >
                             {tag}
-                        </h1>
+                        </span>
                     ))}
                 </div>
             </div>
