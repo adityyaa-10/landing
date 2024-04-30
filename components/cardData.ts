@@ -32,7 +32,7 @@ export const cardData: CardData[] = [
     title: 'Advanced Analytics',
     description:
       'An accelerated program equipping professionals with foundational data and leadership skills to evangelize data-driven change across their organization',
-    tags: ['Meraki UI', 'Meraki UI', 'Meraki UI', 'Meraki UI', 'Meraki UI'],
+    tags: ['Python', 'Excel', 'SQL', 'PowerBI', 'Machine Learning', 'Predictive Analytics'],
   },
   {
     key: 4,
@@ -41,7 +41,7 @@ export const cardData: CardData[] = [
     title: 'Advanced Analytics',
     description:
       'An accelerated program equipping professionals with foundational data and leadership skills to evangelize data-driven change across their organization',
-    tags: ['Meraki UI', 'Meraki UI', 'Meraki UI', 'Meraki UI', 'Meraki UI'],
+    tags: ['Python', 'Excel', 'SQL', 'PowerBI', 'Machine Learning', 'Predictive Analytics'],
   },
   {
     key: 5,
@@ -50,7 +50,7 @@ export const cardData: CardData[] = [
     title: 'Advanced Analytics',
     description:
       'An accelerated program equipping professionals with foundational data and leadership skills to evangelize data-driven change across their organization',
-    tags: ['Meraki UI', 'Meraki UI', 'Meraki UI', 'Meraki UI', 'Meraki UI'],
+    tags: ['Python', 'Excel', 'SQL', 'PowerBI', 'Machine Learning', 'Predictive Analytics'],
   },
   {
     key: 6,
@@ -59,7 +59,7 @@ export const cardData: CardData[] = [
     title: 'Advanced Analytics',
     description:
       'An accelerated program equipping professionals with foundational data and leadership skills to evangelize data-driven change across their organization',
-    tags: ['Meraki UI', 'Meraki UI', 'Meraki UI', 'Meraki UI', 'Meraki UI'],
+    tags: ['Python', 'Excel', 'SQL', 'PowerBI', 'Machine Learning', 'Predictive Analytics'],
   },
   {
     key: 7,
@@ -68,7 +68,7 @@ export const cardData: CardData[] = [
     title: 'Advanced Analytics',
     description:
       'An accelerated program equipping professionals with foundational data and leadership skills to evangelize data-driven change across their organization',
-    tags: ['Meraki UI', 'Meraki UI', 'Meraki UI', 'Meraki UI', 'Meraki UI'],
+    tags: ['Python', 'Excel', 'SQL', 'PowerBI', 'Machine Learning', 'Predictive Analytics'],
   },
   {
     key: 8,
@@ -77,6 +77,6 @@ export const cardData: CardData[] = [
     title: 'Advanced Analytics',
     description:
       'An accelerated program equipping professionals with foundational data and leadership skills to evangelize data-driven change across their organization',
-    tags: ['Meraki UI', 'Meraki UI', 'Meraki UI', 'Meraki UI', 'Meraki UI'],
+    tags: ['Python', 'Excel', 'SQL', 'PowerBI', 'Machine Learning', 'Predictive Analytics'],
   },
 ]
