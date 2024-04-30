@@ -20,14 +20,14 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ imgUrl, title, description, tags }) => {
     return (
-        <div className="flex flex-col bg-white rounded-[16px] sm:rounded-3xl md:rounded-[36px] overflow-hidden h-[470px]">
+        <div className="flex flex-col bg-white rounded-[16px] sm:rounded-3xl md:rounded-[36px] overflow-hidden h-[500px]">
             <img
                 className="object-cover w-full h-40 rounded-t-[16px] sm:rounded-t-3xl md:rounded-t-[36px]"
                 src={imgUrl}
                 alt="avatar"
             />
 
-            <div className="flex flex-col justify-between p-4 flex-1">
+            <div className="flex flex-col justify-between px-4 pb-4 flex-1">
                 <div>
                     <h1 className="text-xl font-medium mb-2">{title}</h1>
                     <p className={`${regularFont.className} text-base leading-[1.35em] text-black tracking-wide mb-4 truncate-3-lines`}>
