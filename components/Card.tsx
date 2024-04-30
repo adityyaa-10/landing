@@ -1,8 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import localFont from 'next/font/local';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
 const regularFont = localFont({
     src: '../fonts/SaansTRIAL-Regular.ttf',
     style: 'normal',
@@ -23,7 +20,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ imgUrl, title, description, tags }) => {
     return (
-        <div className="flex flex-col bg-white rounded-[16px] sm:rounded-3xl md:rounded-[36px] overflow-hidden">
+        <div className="flex flex-col bg-white rounded-[16px] sm:rounded-3xl md:rounded-[36px] overflow-hidden h-[470px]">
             <img
                 className="object-cover w-full h-40 rounded-t-[16px] sm:rounded-t-3xl md:rounded-t-[36px]"
                 src={imgUrl}
