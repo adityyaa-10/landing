@@ -27,7 +27,6 @@ const Home = () => {
   };
   const settings = {
     dots: false,
-    infinite: false,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -35,7 +34,7 @@ const Home = () => {
     arrows: false,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1200,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -44,7 +43,7 @@ const Home = () => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 640,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -55,9 +54,9 @@ const Home = () => {
   };
   return (
     <section className="bg-[#F8F7F3] relative">
-      <div className="px-4 lg:px-12 pt-4 lg:pt-12 pb-24 mx-auto max-w-screen-xl relative">
+      <div className="px-4 md:px-16 lg:px-24 pt-4 lg:pt-12 pb-24 mx-auto  relative">
         <div className="md:flex">
-          <div className="mt-8 md:w-1/3 lg:w-1/4 lg:mt-0 lg:border-r-2">
+          <div className="md:w-1/3 lg:w-1/4 lg:mt-0">
             <div>
               <div>
                 <p className={`text-[#4A5FF7] capitalize text-xl leading-[27px]`}>COMPETENCIES</p>
@@ -71,7 +70,7 @@ const Home = () => {
             </div>
           </div>
           <div className="md:w-2/3 lg:w-3/4 lg:px-4 py-4 lg:py-0">
-            <div className='slider-container'>
+            <div className='slider-container mt-4 lg:mt-0'>
               <Slider
                 ref={sliderRef}
                 {...settings}
@@ -88,41 +87,43 @@ const Home = () => {
                 ))}
               </Slider>
             </div>
+            <div className={`mt-4 flex flex-row-reverse ${regularFont.className} px-4`} >
+              <button className="button ml-3 rounded-full bg-[#4A5FF7] p-2" onClick={next}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="white"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+              <button className="button rounded-full bg-[#4A5FF7] p-2 " onClick={previous}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="white"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+
+            </div>
           </div>
-          <div className={`absolute bottom-[3rem] right-[4.5rem] flex ${regularFont.className}`} >
-            <button className="button rounded-full bg-[#4A5FF7] p-2 " onClick={previous}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="white"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M15 19l-7-7 7-7"
-                />
-              </svg>
-            </button>
-            <button className="button ml-4 rounded-full bg-[#4A5FF7] p-2" onClick={next}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="white"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </button>
-          </div>
+
         </div>
       </div>
     </section >

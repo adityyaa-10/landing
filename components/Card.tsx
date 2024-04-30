@@ -20,7 +20,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ imgUrl, title, description, tags }) => {
     return (
-        <div className="flex flex-col bg-white rounded-[16px] sm:rounded-3xl md:rounded-[36px] overflow-hidden h-[500px]">
+        <div className="flex flex-col bg-white rounded-[16px] sm:rounded-3xl md:rounded-[36px] overflow-hidden h-96  sm:h-[500px]">
             <img
                 className="object-cover w-full h-40 rounded-t-[16px] sm:rounded-t-3xl md:rounded-t-[36px]"
                 src={imgUrl}
